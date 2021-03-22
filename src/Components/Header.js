@@ -5,25 +5,15 @@ import Dimigo from "assets/dimigo.png";
 
 const Text = styled.div`
   display: flex;
+  position: relative;
   width: 100%;
+  z-index: 100;
   height: 100vh;
   justify-content: center;
   align-items: center;
   font-size: 40px;
   font-weight: 700;
-  background: #7f7fd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: white;
   margin: 0;
@@ -73,6 +63,7 @@ const ImgBox1 = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   padding: 0;
+
   @media only screen and (max-width: 600px) {
     height: 30px;
     width: 30px;
@@ -86,6 +77,7 @@ const ImgBox2 = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   padding: 0;
+
   @media only screen and (max-width: 600px) {
     height: 30px;
     width: 30px;
